@@ -1,38 +1,115 @@
-.App {
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main Container */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title */
+.title {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Fruit List */
+.fruit-list {
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fruit-item {
+  background: #3498db;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* Styled Message */
+.styled-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 10px 0;
+}
+
+/* Result Text */
+.sum-result, .greeting, .current-day, .prime-check, .leap-year {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+/* Temperature Converter */
+.temp-converter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.input-box {
+  padding: 10px;
+  margin: 5px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.converted-temp {
+  font-size: 18px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* Reverse String */
+.reverse-result {
+  font-size: 16px;
+  color: #8e44ad;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Random Number Generator */
+.random-number {
+  margin-top: 10px;
+}
+
+.random-btn {
+  background: #27ae60;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.random-btn:hover {
+  background: #2ecc71;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* User Greeting */
+.user-greeting {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d35400;
+  margin-top: 10px;
 }
